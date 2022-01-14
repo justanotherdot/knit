@@ -1,0 +1,13 @@
+[workspace]
+members = [
+  "knit-cli",
+  "knit-core",
+]
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+
+[profile.bench]
+lto = "thin"
+codegen-units = 1
